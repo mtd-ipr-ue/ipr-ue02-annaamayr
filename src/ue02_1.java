@@ -10,9 +10,9 @@ public class ue02_1 {
         int z = In.readInt();
         int max;
 
-        if (x > y && x > z) {
+        if (x >= y && x >= z) {
                 max=x;
-        }   else if (y > x && y > z) {
+        }   else if (y >= x && y >= z) {
                 max=y;
         }   else {
                 max=z;
