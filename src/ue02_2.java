@@ -13,9 +13,9 @@ public class ue02_2 {
         
           
     if (month < 1 || month > 12) {
-         System.out.println("Monat muss zwischen 1 und 12 liegen.");
+         System.out.println("month has to be between 1 and 12.");
      } else if (year < 1) {
-        System.out.println("Jahr muss eine positive Zahl sein.");
+        System.out.println("year has to be a positive number.");
     } else {
                     
 
@@ -28,7 +28,7 @@ public class ue02_2 {
                     days = 30;
                     break;
                 case 2:
-                    if (istSchaltjahr(year)) {
+                    if (isleapyear(year)) {
                      days = 29;
                 } else {
                     days = 28;
@@ -42,7 +42,7 @@ public class ue02_2 {
             }
         
          
-    public static boolean istSchaltjahr(int year) {
+    public static boolean isleapyear (int year) {
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
         return true;
         } else {
