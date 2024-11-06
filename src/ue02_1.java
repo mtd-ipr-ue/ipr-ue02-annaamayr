@@ -1,6 +1,8 @@
+import libraries.In;
+import libraries.Out;
+
 public class ue02_1 {
     public static void main(String[] args) {
-        Out.println("Hello, World!");
  
         Out.print("x: ");
         int x = In.readInt();
@@ -17,6 +19,8 @@ public class ue02_1 {
         }   else {
                 max=z;
         }
+        
+
         
         Out.print("Maximum: ");
         Out.println(max);
